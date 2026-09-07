@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(236, 237, 237);
+    display: grid;
+    justify-content: center;
+    
+}
+.par{
+    height: 530px;
+    width:750px;
+    background-color: rgb(202, 208, 208);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgb(7, 147, 100);
+    margin-top: 10%;
+    position: relative;
+}
+.par>.top{
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 100%;
+    border-radius:22px 22px 0px 0px ;
+    position:relative;
+}
+
+.other{
+    position: absolute;top:30px;left:5px;
+    background-color: rgba(34, 208, 150, 0.69);
+    height: 100px;width:100px;
+    border-radius: 0px 20px 20px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.other, .sup, .log {
+   
+  opacity: 0;
+  visibility: hidden;
+  transition: 5s;
+}
+
+.dots-container:hover ~ .other,
+.dots-container:hover ~ .other .sup,
+.dots-container:hover ~ .other .log,
+ .other:hover .sup,
+ .other:hover,
+ .other:hover .log {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+
+.dots-container {
+    display: flex;
+    gap: 3px; 
+    justify-content: left;
+    width: 10%;  
+     cursor: pointer;
+}
+
+.dot {
+    margin-top:10%;
+    margin-left:9%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; 
+    background-color:rgba(7, 147, 100, 0.453); 
+}
+h1{
+    color:rgb(63, 60, 60);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.write{
+    height:60%;
+    width:65%;
+    padding: 0px 0px 38px 0px;
+    background-color:white;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px  rgba(2, 2, 2, 0.403);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "h21 h21 "
+    "E E"
+    "N N"
+    "P P"
+    "B B"; 
+    gap: 20px;
+}
+.h21     {grid-area: h21;height:150%;width: 50%;margin: auto;}
+.password{grid-area: P;position: relative;height:150%;width: 100%;margin-left: 5%;}
+.number  {grid-area: N;position: relative;height:150%;width: 100%;margin-left: 5%;}
+.email   {grid-area: E;position: relative;height:150%;width: 100%;margin-left: 5%;}
+.button  {grid-area: B;height:50PX;width: 50%;margin: auto;}
+
+h2{
+    background-color: rgba(183, 182, 182, 0.651);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    box-shadow: inset 0px 0px 10px 0px rgba(70, 71, 73, 0.641);    
+}
+.span{color: rgba(111, 110, 110, 0.707);}
+
+input[type]{
+    background-color: rgba(235, 237, 238, 0.686);
+    outline: none;height: 40%;
+    border-radius: 20px;
+    border: none;
+    width: 90%;
+    box-shadow: 0px 0px 5px 0.5px rgb(0, 0, 0);
+}
+input[type]:invalid{background-color: rgba(186, 28, 0, 0.741);}
+input[type]:valid{background-color: transparent;}
+label{
+    display: inline-block;
+    margin-bottom: 2%;
+}
+.rp{position: absolute;
+    bottom: 22.8%;
+    left: 23%;
+    text-decoration: none;
+    color: rgba(255, 153, 0, 0.767);
+    font-size: 14px;
+}
+button{
+    display: inline-block;
+    align-self: center;
+    width: 100%;
+    height:70%;
+    background-color: rgb(26, 117, 36);
+    color: white;
+    font-size: 20px;
+    font-family: initial;
+    border-radius: 15px;
+    transition: linear;
+    border: none;
+    margin-top:10px ;
+    cursor: pointer;
+}
+button:active{
+    transform: translate(0,4px);
+    box-shadow:0px -1px 10px 1px rgb(0, 0, 0) inset;
+}
+.icon {
+    position: absolute;
+    right: 10%;
+    top:40%;
+    font-size: 18px;
+    opacity: 0.2;
+}
+@media  (min-width:800px) {
+    
+    
+}

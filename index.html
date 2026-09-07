@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+  <div class="par">
+    <div class="top">
+       <div class="dots-container">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+    </div>
+    
+    <div class="other">
+       <a href="second.html" style="text-decoration-line: none;color: black;"><h5 class="log" >My Account ></h5></a>
+       <h5 class="sup">support ></h5>
+      </div>
+    </div>
+    <h1>Create_Your_Acount</h1>
+    <form class="write">
+       <div  class="h21"> <h2>Account Details</h2></div>
+      <div class="user">
+        <span class="icon">&#128100;</span>
+        <label for="U">Username</label> <br>
+       <input id="U" type="text" placeholder="Mohamed_Elwan"  pattern="[A-Za-zأ-ي\s _]+" title="letters only " minlength="5" 
+    maxlength="20">
+      </div>
+
+      <div class="f-name">
+           <span class="icon">&#128100;</span>
+        <label for="F">first Name</label><br>
+      <input id="F" type="text" placeholder="Mohamed"  pattern="[A-Za-zأ-ي\s]+" title="letters only " minlength="3" 
+    maxlength="11">
+      </div>
+
+      <div class="l-name">
+           <span class="icon">&#128100;</span>
+        <label for="L">Last Name</label><br>
+      <input id="L" type="text" placeholder="ELWAN"  pattern="[A-Za-zأ-ي\s]+" title="letters only " minlength="3" 
+    maxlength="11">
+      </div>
+
+      <div class="password">
+        <span class="icon">&#128274;</span>
+        <label for="P">Password</label><br>
+      <input id="P" type="password" placeholder="a-z,0-9,@#!?"minlength="10" >
+      </div>
+
+      <div class="number">
+        <span class="icon">&#128241;</span>
+        <label for="N">Phone Number</label><br>
+      <input id="N" type="tel" pattern="[0-9]+" title="Number Only" placeholder="+123456789" minlength="11" 
+    maxlength="11" >
+      </div>
+      <div class="email">
+        <span class="icon">&#9993;</span>
+        <label for="E"><span>Email Adress<span class="span">(Optional)</span></span></label> <br>
+      <input id="E" type="email" placeholder="examble@email.com" >
+      </div>
+      <div class="button">
+      <button>Create My Account</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
