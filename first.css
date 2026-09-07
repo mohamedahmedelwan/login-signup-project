@@ -1,4 +1,5 @@
-body{
+@media (min-width:750px) {
+    body{
     background-color: rgb(236, 237, 237);
     display: grid;
     justify-content: center;
@@ -102,8 +103,6 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 3% 0px 1.5% 0px;
-    text-align: center; */
     height: 40%;
     box-shadow: inset 0px 0px 10px 0px rgba(70, 71, 73, 0.641);    
 }
@@ -148,7 +147,153 @@ button:active{
     font-size: 18px;
     opacity: 0.2;
 }
-@media (min-with:800px) {
-    body{background-color: black;}
+}
+
+@media (max-width:750px) {
+    body{
+   background-color: rgb(202, 208, 208) 
+}
+.par>.top{
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.other{
+    position: absolute;top:30px;left:5px;
+    background-color: rgba(34, 208, 150, 0.69);
+    height: 100px;width:100px;
+    border-radius: 0px 20px 20px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.other, .sup, .log {
+   
+  opacity: 0;
+  visibility: hidden;
+  transition: 5s;
+}
+
+.dots-container:hover ~ .other,
+.dots-container:hover ~ .other .sup,
+.dots-container:hover ~ .other .log,
+ .other:hover .sup,
+ .other:hover,
+ .other:hover .log {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s;
+}
+
+
+.dots-container {
+    display: flex;
+    gap: 3px; 
+    justify-content: left;
+    width: 10%;  
+    cursor: pointer;
+}
+
+.dot {
+    margin-top:20%;
+    margin-left:9%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; 
+    background-color:rgba(7, 147, 100, 0.453); }
+
+.hd{
+    margin: 8% 0 2% 0;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(63, 60, 60);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.write{
+    height:60%;
+    width:65%;
+    padding: 0px 25px 25px 25px;
+    background-color:white;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px  rgba(2, 2, 2, 0.403);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(8,50px);
+    grid-template-areas: 
+    "h22 h22"
+    "F L"
+    " N N"
+    "h21 h21" 
+    "U U" 
+    "P P" 
+    "E E" 
+    "B B"; 
+    gap: 20px;
+}
+.h21     {grid-area: h21;height:150%;width: 100%;}
+.h22     {grid-area:h22; height:150%;width: 100%;}
+.user    {grid-area: U;position: relative;}
+.f-name  {grid-area: F;position: relative;}
+.l-name  {grid-area: L;position: relative;}
+.password{grid-area: P;position: relative;}
+.number  {grid-area: N;position: relative;}
+.email   {grid-area: E;position: relative;}
+.button  {grid-area: B;}
+h2{
+    background-color: rgba(183, 182, 182, 0.651);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    box-shadow: inset 0px 0px 10px 0px rgba(70, 71, 73, 0.641);    
+}
+.span{color: rgba(111, 110, 110, 0.707);}
+
+input[type]{
+    background-color: rgba(235, 237, 238, 0.686);
+    outline: none;height: 40%;
+    border-radius: 20px;
+    border: none;
+    width: 90%;
+    box-shadow: 0px 0px 5px 0.5px rgb(0, 0, 0);
+}
+input[type]:invalid{background-color: rgba(255, 78, 47, 0.375);}
+input[type]:valid{background-color: transparent;}
+label{
+    display: inline-block;
+    margin-bottom: 2%;
+}
+button{
+    display: inline-block;
+    margin-top: 4%;
+    width: 100%;
+    height:70%;
+    background-color: rgb(26, 117, 36);
+    color: white;
+    font-size: 20px;
+    font-family: initial;
+    border-radius: 15px;
+    transition: linear;
+    border: none;
+    cursor: pointer;
+}
+button:active{
+    transform: translate(0,4px);
+    box-shadow:0px -1px 10px 1px rgb(0, 0, 0) inset;
+}
+.icon {
+    position: absolute;
+    right: 10%;
+    top:40%;
+    font-size: 18px;
+    opacity: 0.2;
+}  
     
 }
