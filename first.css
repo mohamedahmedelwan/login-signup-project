@@ -112,11 +112,7 @@ h2 {
     flex-direction: column;
 }
 
-label {
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: #333;
-}
+
 
 input[type] {
     background-color: rgba(235, 237, 238, 0.686);
@@ -175,13 +171,19 @@ button:active {
     }
     .h21    { grid-area: h21; }
     .h22    { grid-area: h22; }
-    .user   { grid-area: U; }
+    .user   { grid-area: U;}
     .f-name { grid-area: F; }
     .l-name { grid-area: L; }
     .password { grid-area: P; }
     .number { grid-area: N; }
     .email  { grid-area: E; }
     .button { grid-area: B; align-self: end; }
+    label {
+    margin-bottom: -6%;
+    font-size: 14px;
+    color: #333;
+}
+   
 }
 
 
@@ -207,4 +209,9 @@ button:active {
     .number { grid-area: N; }
     .email  { grid-area: E; }
     .button { grid-area: B; }
+    label {
+    margin-bottom: -4%;
+    font-size: 14px;
+    color: #333;
+}
 }
